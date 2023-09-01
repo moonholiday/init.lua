@@ -6,7 +6,6 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use 'ThePrimeagen/vim-be-good'
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -22,17 +21,6 @@ return require('packer').startup(function(use)
         end
     })
 
-    use({
-        "folke/trouble.nvim",
-        config = function()
-            require("trouble").setup {
-                icons = false,
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
-            }
-        end
-    })
 
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -41,9 +29,7 @@ return require('packer').startup(function(use)
             ts_update()
         end, }
     use("theprimeagen/harpoon")
-    use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
-    use("tpope/vim-fugitive")
     use("nvim-treesitter/nvim-treesitter-context");
     use("windwp/nvim-autopairs");
     use("windwp/nvim-ts-autotag");
@@ -71,8 +57,4 @@ return require('packer').startup(function(use)
         }
     }
 
-    use("folke/zen-mode.nvim")
-    use("github/copilot.vim")
-    use("eandrju/cellular-automaton.nvim")
-    use("laytan/cloak.nvim")
 end)
