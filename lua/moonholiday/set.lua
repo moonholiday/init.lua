@@ -26,3 +26,8 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
+
+-- Automatically format the code when saving any buffer
+vim.cmd([[
+  autocmd BufWritePre * :lua vim.lsp.buf.format()
+]])
