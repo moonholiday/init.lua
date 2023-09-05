@@ -29,5 +29,5 @@ vim.opt.colorcolumn = "100"
 
 -- Automatically format the code when saving any buffer
 vim.cmd([[
-  autocmd BufWritePre * :lua vim.lsp.buf.format()
+    autocmd BufWritePre * :lua vim.lsp.buf.format()
 ]])

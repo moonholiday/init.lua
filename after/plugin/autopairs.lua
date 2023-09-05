@@ -1,4 +1,3 @@
 require("nvim-autopairs").setup({
-  enabled = true,
+    enabled = true,
 })
-
