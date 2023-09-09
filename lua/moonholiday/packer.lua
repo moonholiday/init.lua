@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context");
     use("windwp/nvim-autopairs");
     use("windwp/nvim-ts-autotag");
+    use("folke/zen-mode.nvim");
 
     use {
         'VonHeikemen/lsp-zero.nvim',
