@@ -34,7 +34,6 @@ return require('packer').startup(function(use)
     use("windwp/nvim-autopairs");
     use("windwp/nvim-ts-autotag");
     use("folke/zen-mode.nvim");
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
