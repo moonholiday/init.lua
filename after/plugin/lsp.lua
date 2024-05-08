@@ -5,7 +5,6 @@ lsp.preset("recommended")
 lsp.ensure_installed({
     'gopls',
     'lua_ls',
-    'pylsp',
     'rust_analyzer',
     'tailwindcss',
     'tsserver',
@@ -13,7 +12,6 @@ lsp.ensure_installed({
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
-
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
